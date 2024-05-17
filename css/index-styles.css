@@ -614,7 +614,7 @@ main .eighth-section {
   padding: 120px 0;
 }
 main .eighth-section .container {
-  margin: 0;
+  margin: auto;
   display: flex;
   padding: 0px 32px;
   flex-direction: column;
@@ -674,6 +674,127 @@ main .eighth-section .container .see-more-photos-btn label {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+}
+main footer {
+  background: var(--color-green);
+  width: 100%;
+  height: 209px;
+}
+main footer .container {
+  margin: auto;
+  padding: 53px 0 26px 0;
+  display: flex;
+  width: 1184px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 17px;
+}
+main footer .container .first-row {
+  display: flex;
+  min-height: 63px;
+  align-items: flex-start;
+  align-content: flex-start;
+  column-gap: 275px;
+  row-gap: 0;
+  flex-wrap: wrap;
+}
+main footer .container .first-row h3 {
+  margin: 0;
+  color: var(--color-element);
+  font-family: "Varela Round";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px; /* 152.381% */
+}
+main footer .container .first-row .footer-menu {
+  display: flex;
+  width: 377px;
+  padding: 4px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+main footer .container .first-row .footer-menu p {
+  margin: 0;
+  color: var(--color-element);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+main footer .container .first-row .footer-menu p a {
+  text-decoration: none;
+  color: var(--color-element);
+}
+main footer .container .first-row .right {
+  display: flex;
+  width: auto;
+  padding: 5px 14px;
+  justify-content: end;
+  gap: 10px;
+  flex-direction: row;
+  height: 20px;
+}
+main footer .container .first-row .right svg:hover {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.2);
+}
+main footer .container .first-row .footer-contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  max-width: 676px;
+  min-height: 24px;
+}
+main footer .container .first-row .footer-contacts p {
+  margin: 0;
+  color: var(--color-element);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+main footer .container .first-row .footer-contacts p a {
+  text-decoration: none;
+  color: var(--color-element);
+}
+main footer .container hr {
+  width: 1170px;
+  height: 1px;
+  background: var(--color-element);
+  opacity: 0.4;
+  border: none;
+  margin: 0;
+}
+main footer .container .second-row {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .container .second-row .created-with {
+  margin: 0;
+  color: var(--color-element);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px; /* 145.455% */
+}
+main footer .container .second-row .other-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+main footer .container .second-row .other-info p {
+  margin: 0;
+  color: var(--color-element);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px; /* 145.455% */
 }
 
 /*# sourceMappingURL=index-styles.css.map */
