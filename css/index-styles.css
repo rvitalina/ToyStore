@@ -18,6 +18,10 @@
   --color-border: #272727;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1440px;
   height: auto;
@@ -32,6 +36,7 @@ header {
   font-family: "Open Sans";
   display: flex;
   flex-direction: column;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.12);
 }
 header .header-contacts {
   color: var(--color-element);
@@ -127,6 +132,16 @@ header .header-main-part nav .icons-container svg:hover {
   transition: transform 0.3s ease;
   transform: scale(1.2);
 }
+header .header-main-part nav .icons-container select {
+  background: var(--color-bg);
+  color: var(--color-font);
+  font-family: "Varela Round";
+  font-weight: bold;
+  height: 27px;
+  border-radius: 4px;
+  transition: height 0.3s ease;
+  border: 1px solid;
+}
 
 main {
   max-width: 100%;
@@ -172,11 +187,13 @@ main .first-section .container h1 {
 }
 main .first-section .container button {
   background-color: var(--color-green);
-  color: var(--color-element);
   border: none;
   border-radius: 24px;
   min-width: 153px;
   height: 48px;
+}
+main .first-section .container button label {
+  color: var(--color-element);
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -256,10 +273,10 @@ main .second-section .container .shop-now-btn {
   height: 40px;
   border: none;
   border-radius: 20px;
+}
+main .second-section .container .shop-now-btn label {
   text-align: center;
-  font-family: "Open Sans";
   font-size: 13px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 184.615% */
 }
@@ -531,6 +548,8 @@ main .sixth-section .container .main-part .left-col .get-it-now-btn {
   border: none;
   background: var(--color-green);
   border-radius: 24px;
+}
+main .sixth-section .container .main-part .left-col .get-it-now-btn #get-it-now {
   color: var(--color-element);
   text-align: center;
   font-size: 14px;
@@ -695,7 +714,7 @@ main footer .container .first-row {
   min-height: 63px;
   align-items: flex-start;
   align-content: flex-start;
-  column-gap: 275px;
+  column-gap: 270px;
   row-gap: 0;
   flex-wrap: wrap;
 }
@@ -709,7 +728,7 @@ main footer .container .first-row h3 {
 }
 main footer .container .first-row .footer-menu {
   display: flex;
-  width: 377px;
+  max-width: 386px;
   padding: 4px 0px;
   justify-content: center;
   align-items: center;
@@ -745,7 +764,7 @@ main footer .container .first-row .footer-contacts {
   align-items: center;
   column-gap: 30px;
   flex-wrap: wrap;
-  max-width: 676px;
+  max-width: 735px;
   min-height: 24px;
 }
 main footer .container .first-row .footer-contacts p {
