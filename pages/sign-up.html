@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="./../css/index-styles.css">
+    <link rel="stylesheet" href="./../css/sign-up.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-contacts">
+            <div class="left">
+                <p data-i18n="call-us">Call Us: +375447670421</p>
+                <p data-i18n="e-mail">E-mail: v.rukus15@gmail.com</p>
+            </div>
+            <div class="right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.75 4.67606C15.2533 4.89544 14.7195 5.04506 14.1593 5.11088C14.7308 4.76831 15.1701 4.2255 15.3765 3.57919C14.8427 3.89587 14.2493 4.1265 13.6187 4.25194C13.113 3.71363 12.3924 3.375 11.5971 3.375C10.0676 3.375 8.82619 4.61644 8.82619 6.14587C8.82619 6.36356 8.85037 6.5745 8.89875 6.77644C6.59644 6.66225 4.55512 5.55919 3.1905 3.88238C2.95087 4.29131 2.81475 4.76831 2.81475 5.27569C2.81475 6.23587 3.30244 7.08413 4.04719 7.58081C3.59269 7.56506 3.16631 7.44244 2.79281 7.23319C2.79281 7.24669 2.79281 7.25738 2.79281 7.26863C2.79281 8.61131 3.74625 9.73181 5.01412 9.98438C4.78125 10.0479 4.53713 10.0834 4.28456 10.0834C4.10681 10.0834 3.93075 10.0659 3.76369 10.0328C4.11525 11.1336 5.13956 11.9334 6.35006 11.9576C5.40281 12.7001 4.2075 13.1417 2.9115 13.1417C2.68706 13.1417 2.46769 13.1287 2.25 13.1023C3.47625 13.8892 4.93088 14.3482 6.49519 14.3482C11.5903 14.3482 14.3769 10.1273 14.3769 6.4665C14.3769 6.34781 14.3724 6.22688 14.3679 6.10819C14.9085 5.71725 15.3787 5.22956 15.75 4.67606Z" fill="var(--color-element"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <mask id="mask0_177_1611" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="14" height="14">
+                      <path d="M10.6948 15.5V10.5964H12.3577L12.6059 8.73208H10.6948V7.52469C10.6948 6.97426 10.8442 6.60139 11.6429 6.60139H12.6875V4.88352C12.5111 4.86133 11.894 4.8125 11.191 4.8125C9.72253 4.8125 8.73019 5.70473 8.73019 7.32494V8.73208H7.0625V10.5964H8.72979L8.72655 15.5H3.125C2.50977 15.5 2 14.9902 2 14.375V3.125C2 2.50977 2.50977 2 3.125 2H14.375C14.9902 2 15.5 2.50977 15.5 3.125V14.375C15.5 14.9902 14.9902 15.5 14.375 15.5H10.6948Z" fill="var(--color-element"/>
+                    </mask>
+                    <g mask="url(#mask0_177_1611)">
+                      <path d="M10.6948 15.5V10.5964H12.3577L12.6059 8.73208H10.6948V7.52469C10.6948 6.97426 10.8442 6.60139 11.6429 6.60139H12.6875V4.88352C12.5111 4.86133 11.894 4.8125 11.191 4.8125C9.72253 4.8125 8.73019 5.70473 8.73019 7.32494V8.73208H7.0625V10.5964H8.72979L8.72655 15.5H3.125C2.50977 15.5 2 14.9902 2 14.375V3.125C2 2.50977 2.50977 2 3.125 2H14.375C14.9902 2 15.5 2.50977 15.5 3.125V14.375C15.5 14.9902 14.9902 15.5 14.375 15.5H10.6948Z" fill="var(--color-element"/>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 6.1457C2.25 3.99416 3.99415 2.25 6.1457 2.25H11.8543C14.0058 2.25 15.75 3.99415 15.75 6.1457V11.8543C15.75 14.0058 14.0059 15.75 11.8543 15.75H6.1457C3.99416 15.75 2.25 14.0059 2.25 11.8543V6.1457ZM3.47198 6.26189V11.7381C3.47198 13.2812 4.72107 14.528 6.26189 14.528H11.7381C13.2812 14.528 14.528 13.2789 14.528 11.7381V6.26189C14.528 4.71876 13.2789 3.47198 11.7381 3.47198H6.26189C4.71876 3.47198 3.47198 4.72107 3.47198 6.26189ZM9 12.4332C7.1039 12.4332 5.56681 10.8961 5.56681 9C5.56681 7.1039 7.1039 5.56681 9 5.56681C10.8961 5.56681 12.4332 7.1039 12.4332 9C12.4332 10.8961 10.8961 12.4332 9 12.4332ZM9 11.2112C10.2212 11.2112 11.2112 10.2212 11.2112 9C11.2112 7.77878 10.2212 6.78879 9 6.78879C7.77878 6.78879 6.78879 7.77878 6.78879 9C6.78879 10.2212 7.77878 11.2112 9 11.2112ZM12.5496 6.2069C12.0996 6.2069 11.7349 5.84216 11.7349 5.39224C11.7349 4.94232 12.0996 4.57759 12.5496 4.57759C12.9995 4.57759 13.3642 4.94232 13.3642 5.39224C13.3642 5.84216 12.9995 6.2069 12.5496 6.2069Z" fill="var(--color-element"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <mask id="mask0_177_1619" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="14" height="14">
+                      <path d="M9 2.25C5.27124 2.25 2.25 5.27124 2.25 9C2.25 11.8608 4.02979 14.302 6.54126 15.2864C6.48193 14.7524 6.427 13.9329 6.56323 13.3484C6.68628 12.8232 7.35425 9.99316 7.35425 9.99316C7.35425 9.99316 7.1543 9.58887 7.1543 8.99121C7.1543 8.05298 7.69702 7.35205 8.37378 7.35205C8.94946 7.35205 9.22852 7.78491 9.22852 8.30347C9.22852 8.88354 8.85938 9.74927 8.66821 10.5513C8.51001 11.2236 9.00659 11.7708 9.66797 11.7708C10.8677 11.7708 11.7905 10.5051 11.7905 8.6792C11.7905 7.06421 10.6304 5.93481 8.97144 5.93481C7.05102 5.93481 5.92383 7.37402 5.92383 8.86377C5.92383 9.44385 6.14795 10.0657 6.427 10.4041C6.48193 10.47 6.48853 10.5293 6.47315 10.5974C6.42041 10.8105 6.30835 11.2698 6.28638 11.3621C6.25562 11.4873 6.1875 11.5137 6.06006 11.4521C5.21631 11.061 4.68897 9.82837 4.68897 8.8374C4.68897 6.70825 6.23584 4.75269 9.14941 4.75269C11.4917 4.75269 13.311 6.42041 13.311 8.65283C13.311 10.9775 11.8433 12.8496 9.80859 12.8496C9.12524 12.8496 8.48145 12.4958 8.26172 12.0762C8.26172 12.0762 7.92334 13.3638 7.83984 13.6802C7.68823 14.2668 7.27734 15.0007 7.00049 15.449C7.6333 15.6445 8.30347 15.75 9 15.75C12.7288 15.75 15.75 12.7288 15.75 9C15.75 5.27124 12.7288 2.25 9 2.25Z" fill="var(--color-element"/>
+                    </mask>
+                    <g mask="url(#mask0_177_1619)">
+                      <path d="M9 2.25C5.27124 2.25 2.25 5.27124 2.25 9C2.25 11.8608 4.02979 14.302 6.54126 15.2864C6.48193 14.7524 6.427 13.9329 6.56323 13.3484C6.68628 12.8232 7.35425 9.99316 7.35425 9.99316C7.35425 9.99316 7.1543 9.58887 7.1543 8.99121C7.1543 8.05298 7.69702 7.35205 8.37378 7.35205C8.94946 7.35205 9.22852 7.78491 9.22852 8.30347C9.22852 8.88354 8.85938 9.74927 8.66821 10.5513C8.51001 11.2236 9.00659 11.7708 9.66797 11.7708C10.8677 11.7708 11.7905 10.5051 11.7905 8.6792C11.7905 7.06421 10.6304 5.93481 8.97144 5.93481C7.05102 5.93481 5.92383 7.37402 5.92383 8.86377C5.92383 9.44385 6.14795 10.0657 6.427 10.4041C6.48193 10.47 6.48853 10.5293 6.47315 10.5974C6.42041 10.8105 6.30835 11.2698 6.28638 11.3621C6.25562 11.4873 6.1875 11.5137 6.06006 11.4521C5.21631 11.061 4.68897 9.82837 4.68897 8.8374C4.68897 6.70825 6.23584 4.75269 9.14941 4.75269C11.4917 4.75269 13.311 6.42041 13.311 8.65283C13.311 10.9775 11.8433 12.8496 9.80859 12.8496C9.12524 12.8496 8.48145 12.4958 8.26172 12.0762C8.26172 12.0762 7.92334 13.3638 7.83984 13.6802C7.68823 14.2668 7.27734 15.0007 7.00049 15.449C7.6333 15.6445 8.30347 15.75 9 15.75C12.7288 15.75 15.75 12.7288 15.75 9C15.75 5.27124 12.7288 2.25 9 2.25Z" fill="var(--color-element"/>
+                    </g>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <mask id="mask0_1_25" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="3" width="16" height="12">
+                      <path d="M9 3.375C11.1184 3.375 12.9904 3.59494 14.1328 3.762C15.0778 3.90038 15.84 4.61194 16.0138 5.55469C16.1629 6.35906 16.3125 7.53469 16.3125 9C16.3125 10.4653 16.1606 11.6409 16.0138 12.4453C15.84 13.3881 15.0778 14.1019 14.1328 14.238C12.9859 14.4051 11.1071 14.625 9 14.625C6.89288 14.625 5.01413 14.4051 3.86719 14.238C2.92219 14.1019 2.16 13.3881 1.98619 12.4453C1.83937 11.6432 1.6875 10.4698 1.6875 9C1.6875 7.53019 1.83937 6.35681 1.98619 5.55469C2.16 4.61194 2.92219 3.90038 3.86719 3.762C5.00962 3.59494 6.88163 3.375 9 3.375ZM7.3125 5.78306V12.2169L8.15625 11.7422L12.0938 9.49219L12.9375 9L12.0938 8.50781L8.15625 6.25781L7.3125 5.78306Z" fill="var(--color-element"/>
+                    </mask>
+                    <g mask="url(#mask0_1_25)">
+                      <path d="M9 3.375C11.1184 3.375 12.9904 3.59494 14.1328 3.762C15.0778 3.90038 15.84 4.61194 16.0138 5.55469C16.1629 6.35906 16.3125 7.53469 16.3125 9C16.3125 10.4653 16.1606 11.6409 16.0138 12.4453C15.84 13.3881 15.0778 14.1019 14.1328 14.238C12.9859 14.4051 11.1071 14.625 9 14.625C6.89288 14.625 5.01413 14.4051 3.86719 14.238C2.92219 14.1019 2.16 13.3881 1.98619 12.4453C1.83937 11.6432 1.6875 10.4698 1.6875 9C1.6875 7.53019 1.83937 6.35681 1.98619 5.55469C2.16 4.61194 2.92219 3.90038 3.86719 3.762C5.00962 3.59494 6.88163 3.375 9 3.375ZM7.3125 5.78306V12.2169L8.15625 11.7422L12.0938 9.49219L12.9375 9L12.0938 8.50781L8.15625 6.25781L7.3125 5.78306Z" fill="var(--color-element"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="header-main-part">
+            <a href="./../pages/index.html">
+                <h2>ToyStore</h2>
+            </a>    
+            <nav>
+                <ul>
+                    <li data-i18n="catalog"><a href="#third-section">Catalog</a></li>
+                    <li data-i18n="delivery">Delivery</li>
+                    <li data-i18n="about"><a href="">About</a></li>
+                    <li data-i18n="contacts"><a href="#footer">Contacts</a></li>
+                </ul>
+
+                <div class="icons-container">
+                    <svg id="theme-switcher" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19.9999 8.68997V3.99997H15.3099L11.9999 0.689972L8.68994 3.99997H3.99994V8.68997L0.689941 12L3.99994 15.31V20H8.68994L11.9999 23.31L15.3099 20H19.9999V15.31L23.3099 12L19.9999 8.68997ZM11.9999 18C11.1099 18 10.2599 17.8 9.49994 17.45C11.5599 16.5 12.9999 14.42 12.9999 12C12.9999 9.57997 11.5599 7.49997 9.49994 6.54997C10.2599 6.19997 11.1099 5.99997 11.9999 5.99997C15.3099 5.99997 17.9999 8.68997 17.9999 12C17.9999 15.31 15.3099 18 11.9999 18Z" fill="var(--color-font)"/>
+                    </svg>
+                    <select name="select-lang" id="lang-switcher" onchange="changeLanguage()">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="create-account">
+            <div class="login-link">
+                <p id="login" data-i18n="have-an-account">Already have an account?</p>
+                <a href="./../pages/login.html">
+                    <svg id="login-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M23.25 2.69662V21.3035C23.2495 21.7968 23.0517 22.2698 22.7002 22.6186C22.3487 22.9674 21.8721 23.1636 21.375 23.1642H7.625C7.12789 23.1636 6.65129 22.9674 6.29978 22.6186C5.94827 22.2698 5.75055 21.7968 5.75 21.3035V16.3417C5.75 16.1772 5.81585 16.0194 5.93306 15.9031C6.05027 15.7868 6.20924 15.7214 6.375 15.7214C6.54076 15.7214 6.69973 15.7868 6.81694 15.9031C6.93415 16.0194 7 16.1772 7 16.3417V21.3035C7.00012 21.468 7.066 21.6256 7.18319 21.7419C7.30037 21.8582 7.45928 21.9236 7.625 21.9237H21.375C21.5407 21.9236 21.6996 21.8582 21.8168 21.7419C21.934 21.6256 21.9999 21.468 22 21.3035V2.69662C21.9999 2.53216 21.934 2.37447 21.8168 2.25818C21.6996 2.14189 21.5407 2.07651 21.375 2.0764H7.625C7.45928 2.07651 7.30037 2.14189 7.18319 2.25818C7.066 2.37447 7.00012 2.53216 7 2.69662V8.27869C7 8.44318 6.93415 8.60094 6.81694 8.71725C6.69973 8.83357 6.54076 8.89891 6.375 8.89891C6.20924 8.89891 6.05027 8.83357 5.93306 8.71725C5.81585 8.60094 5.75 8.44318 5.75 8.27869V2.69662C5.75055 2.20331 5.94827 1.73035 6.29978 1.38152C6.65129 1.03269 7.12789 0.836479 7.625 0.835938H21.375C21.8721 0.836479 22.3487 1.03269 22.7002 1.38152C23.0517 1.73035 23.2495 2.20331 23.25 2.69662ZM13.4276 15.2884C13.3695 15.3465 13.3235 15.4155 13.2924 15.4914C13.2612 15.5672 13.2455 15.6484 13.2462 15.7303C13.2468 15.8122 13.2638 15.8932 13.2962 15.9686C13.3286 16.0439 13.3757 16.1122 13.4347 16.1693C13.4938 16.2265 13.5637 16.2716 13.6404 16.3018C13.7172 16.332 13.7991 16.3469 13.8817 16.3455C13.9642 16.3441 14.0456 16.3265 14.1213 16.2938C14.1969 16.261 14.2653 16.2137 14.3224 16.1545L17.0867 13.3429C17.433 12.9858 17.6268 12.5097 17.6277 12.0141C17.6286 11.5185 17.4365 11.0417 17.0916 10.6833L14.3242 7.84744C14.2672 7.7889 14.1991 7.74208 14.1238 7.70967C14.0485 7.67726 13.9675 7.65988 13.8854 7.65853C13.8033 7.65718 13.7218 7.67188 13.6455 7.7018C13.5691 7.73172 13.4995 7.77626 13.4405 7.8329C13.3815 7.88953 13.3343 7.95714 13.3016 8.03186C13.269 8.10658 13.2515 8.18696 13.2501 8.2684C13.2487 8.34984 13.2636 8.43075 13.2937 8.50651C13.3239 8.58227 13.3687 8.65139 13.4258 8.70993L16.0313 11.3798H1.375C1.20924 11.3798 1.05027 11.4452 0.933058 11.5615C0.815848 11.6778 0.75 11.8356 0.75 12.0001C0.75 12.1646 0.815848 12.3223 0.933058 12.4386C1.05027 12.5549 1.20924 12.6203 1.375 12.6203H16.0507L13.4276 15.2884Z" fill="black"/>
+                    </svg>
+                </a>
+            </div>
+            <section class="sign-up-container">
+                <h2 id="create-account" data-i18n="create-account">Create an account</h2>
+                
+                <form action="" method="POST" id="signup-form">
+                    <label for="last-name" data-i18n="last-name">Last name*:</label>
+                    <input type="text" id="last-name" name="last_name">
+                    <span class="error-message" id="last-name-error"></span>
+
+                    <label for="first-name" data-i18n="first-name">First name*:</label>
+                    <input type="text" id="first-name" name="first_name">
+                    <span class="error-message" id="first-name-error"></span>
+                
+                    <label for="patronymic" data-i18n="patronymic">Patronymic:</label>
+                    <input type="text" id="patronymic" name="patronymic">
+                    <span class="error-message" id="patronymic-error"></span>
+                
+                    <label for="email" data-i18n="email">Email*:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message" id="email-error"></span>
+                
+                    <label for="nickname" data-i18n="nickname">Nickname*:</label>
+                    <div class="generate-box"> 
+                        <input type="text" id="nickname" name="nickname" minlength="8">
+                        <button id="gen-nickname" class="generate-btn" data-i18n="generate">Generate</button>
+                    </div>
+                    <div id="message" class="message"></div>
+                    <!-- <span class="error-message" id="nickname-error"></span> -->
+                
+                    <label for="dob-month" data-i18n="dob">Date of birth*:</label>
+
+                    <div class="dob-container">
+                        <select id="dob-month" name="dob_month">
+                            <option value="" disabled selected data-i18n="month">Select month</option>
+                        </select>
+                            
+                        <select id="dob-date" name="dob_date">
+                            <option value="" disabled selected data-i18n="day">Select date</option>
+                        </select>
+                        
+                        <select id="dob-year" name="dob_year">
+                            <option value="" disabled selected data-i18n="year">Select year</option>
+                        </select>
+                    </div>
+                    <span class="error-message" id="dob-error"></span>
+
+                    <label for="phone" data-i18n="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <span class="error-message" id="phone-error"></span>
+
+                    <label for="password" data-i18n="password">Password*:</label>
+                    <div class="generate-box"> 
+                        <input type="password" id="password" name="password">
+                        <button id="gen-password" class="generate-btn" data-i18n="generate">Generate</button>
+                    </div>
+                    <span class="error-message" id="password-error"></span>
+
+                    <label for="confirm-password" data-i18n="confirm-password">Repeat Password*:</label>
+                    <input type="confirm-password" id="confirm-password" name="confirm_password">
+                    <span class="error-message" id="confirm-password-error"></span>   
+
+                    <div class="terms-of-use">
+                        <input type="checkbox" id="terms-of-use" name="terms-of-use">
+                        <p data-i18n="terms">By creating an account, I agree to the Terms of use.</p>
+                    </div>
+                </form>                          
+                <!-- <input type="submit" value="Sign up" id="submit-btn" style="display: none;">   -->
+                <button class="bottom-btn" data-i18n="sign-up">Sign-up</button>
+
+            </section>
+        </section>
+
+        <div id="modal-container">
+            <div id="modal-content">
+                <div class="top-row">
+                    <h3 data-i18n="terms-h3">Terms of Use</h3>
+                    <svg onclick="closeModal()" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                        <g clip-path="url(#clip0_389_938)">
+                          <path d="M38 0H0V38H38V0Z" fill="white" fill-opacity="0.01"/>
+                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_389_938">
+                            <rect width="38" height="38" fill="white"/>
+                          </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="scroll-container">
+                    <p>
+                        1. Acceptance of Terms
+                        By accessing and using the registration page of our toy store, you agree to comply with these Terms of Use. If you do not agree with any part of these terms, please refrain from using the registration page.
+                        <br>
+                        2. Eligibility
+                        To use the registration page, you must be of legal age according to the laws of your jurisdiction or have obtained consent from a parent or guardian. By registering, you represent that you meet the eligibility requirements.
+                        <br>
+                        3. Registration Information
+                        You are responsible for providing accurate and up-to-date information during the registration process. This includes your name, email address, and any other required details. You agree to keep this information current and promptly update any changes.
+                        <br>
+                        4. Account Security
+                        You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You must not share your account information with any third party. Any activity that occurs under your account is your responsibility.
+                        <br>
+                        5. User Conduct
+                        When using the registration page, you agree not to:
+                           a. Provide false, misleading, or inaccurate information.
+                           b. Engage in any unlawful, fraudulent, or unauthorized activities.
+                           c. Violate any applicable laws or regulations.
+                           d. Interfere with or disrupt the functionality of the registration page.
+                           e. Attempt to gain unauthorized access to the accounts of others.
+                           f. Use the registration page for any commercial or promotional purposes without our prior written consent.
+                        <br>
+                        6. Intellectual Property
+                        All content provided on the registration page, including text, graphics, logos, images, and software, is the property of the toy store or its licensors and is protected by intellectual property laws. You may not use, reproduce, distribute, or modify any content without obtaining explicit permission.
+                        <br>
+                        7. Privacy
+                        We respect your privacy and handle your personal information in accordance with our Privacy Policy. By using the registration page, you consent to the collection, use, and disclosure of your information as described in our Privacy Policy.
+                        <br>
+                        8. Termination
+                        We reserve the right to suspend or terminate your access to the registration page at any time without prior notice if we believe you have violated these Terms of Use or engaged in any prohibited activities.
+                        <br>
+                        9. Modifications
+                        We may update or modify these Terms of Use from time to time. Any changes will be effective immediately upon posting the revised terms on the registration page. Your continued use of the registration page constitutes your acceptance of the modified terms.
+                        <br>
+                        10. Governing Law
+                        These Terms of Use shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any legal proceedings arising out of or in connection with these terms shall be exclusively brought in the courts of [Jurisdiction].
+                        <br>
+                        Please carefully read and understand these Terms of Use before proceeding with the registration. If you have any questions or concerns, please contact us for clarification.
+                    </p>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    <script src="./../js/select-date.js"></script>
+    <script src="./../js/validate-form.js"></script>
+    <script src="./../js/generate-nickname.js"></script>
+    <script src="./../js/open-modal.js"></script>
+    <script src="./../js/lang-switcher.js"></script>
+    <script src="./../js/theme-switcher.js"></script>
+</body>
+</html>
