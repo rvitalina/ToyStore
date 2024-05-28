@@ -4,9 +4,9 @@
     <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link rel="stylesheet" href="./../css/index-styles.css">
+    <link rel="stylesheet" href="./../css/catalog-styles.css">
     <link rel="stylesheet" href="./../css/modal-styles.css">
     <link rel="stylesheet" href="./../css/media-index.css">
-    <link rel="stylesheet" href="./../css/slider.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToyStore</title>
@@ -63,20 +63,20 @@
             <h2>ToyStore</h2>
             <nav id="menu">
                 <ul>
-                    <li><a class="second-section-href" href="#second-section" data-i18n="catalog">Catalog</a></li>
+                    <li><a href="/pages/index.html#second-section" data-i18n="catalog">Catalog</a></li>
                     <li><a href="./../pages/about.html" data-i18n="about">About</a></li>
                     <li><a class="footer-href" href="#footer" data-i18n="contacts">Contacts</a></li>
                 </ul>
                 <svg class="close-menu-btn" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 38 38" fill="none">
                         <g clip-path="url(#clip0_389_938)">
-                          <path d="M38 0H0V38H38V0Z" fill="var(--color-font)" fill-opacity="0.01"/>
+                          <path d="M38 0H0V38H38V0Z" fill="white" fill-opacity="0.01"/>
                           <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
-                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="var(--color-font)"/>
-                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="var(--color-font)"/>
+                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         <defs>
                           <clipPath id="clip0_389_938">
-                            <rect width="38" height="38" fill="var(--color-font)"/>
+                            <rect width="38" height="38" fill="white"/>
                           </clipPath>
                         </defs>
                 </svg>
@@ -100,273 +100,60 @@
     </header>
 
     <main>
-        <section class="first-section">
-            <div class="container">
-                <p data-i18n="say-hello">Say Hello to ToyStore!</p>
-                <h1 data-i18n="free-ecom">Free Ecommerce Template for Webflow</h1>
-                <button><label data-i18n="open-catalog">Open Catalog</label></button>
-            </div>
-        </section>
-
-        <section id="second-section" class="second-section">
-            <div class="container">
-                <div class="stuffed-animals">
-                    <img src="../images/teddy.png" alt="Teddy bear">
-                    <div>
-                        <p data-i18n="stuffed-animals" class="toys-animals-text">Stuffed Animals</p>
-                        <button class="shop-now-btn">
-                            <label data-i18n="shop-now">Shop Now</label>
-                        </button>
-                    </div>
-                </div>
-                <div class="wooden-toys">
-                    <div>
-                        <p data-i18n="wooden-toys" class="toys-animals-text">Wooden Toys</p>
-                        <button class="shop-now-btn">
-                            <label data-i18n="shop-now">Shop Now</label>
-                        </button>                    
-                    </div>
-                    <img src="../images/wooden-toy.png" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="third-and-forth-section">
-            <div class="container">
+        <section class="third-and-forth-section" style="height: auto; padding: 0;">
+            <div class="container" style="height: auto;">
                 <div class="main-content">
                     <div class="higher-part">
                         <div class="heading">
-                            <h2 data-i18n="stuffed-animals">Stuffed Animals</h2>
-                            <div class="see-all-toys">
-                                <a href="./../pages/stuffed-catalog.html">
-                                    <p data-i18n="see-all">See All Toys</p>
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                    <path d="M9.0187 11.7625C8.89995 11.7625 8.7812 11.7187 8.68745 11.625C8.5062 11.4437 8.5062 11.1437 8.68745 10.9625L12.15 7.49995L8.68745 4.03745C8.5062 3.8562 8.5062 3.5562 8.68745 3.37495C8.8687 3.1937 9.1687 3.1937 9.34995 3.37495L13.1437 7.1687C13.325 7.34995 13.325 7.64995 13.1437 7.8312L9.34995 11.625C9.2562 11.7187 9.13745 11.7625 9.0187 11.7625Z" fill="var(--color-font)"/>
-                                    <path d="M12.7062 7.96875H2.1875C1.93125 7.96875 1.71875 7.75625 1.71875 7.5C1.71875 7.24375 1.93125 7.03125 2.1875 7.03125H12.7062C12.9625 7.03125 13.175 7.24375 13.175 7.5C13.175 7.75625 12.9625 7.96875 12.7062 7.96875Z" fill="var(--color-font)"/>
-                                </svg>
-                            </div>
+                            <h2 data-i18n="stuffed-catalog">Stuffed Animals Catalog</h2>
                         </div>
                         <hr>
                     </div>
-                    <div class="wrapper">
-                        <div class="carousel">
-                            <div class="card" class="toy-card">
-                                <img src="./../images/teddy.png" alt="" draggable="false">
-                                <p data-i18n="teddy-bear">Teddy Bear</p>
-                                <button>$ 30.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/plush-toy.png" alt="" draggable="false">
-                                <p data-i18n="plush-toy">Mega Plush Toy</p>
-                                <button>$ 38.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/cute-dog.png" alt="" draggable="false">
-                                <p data-i18n="cute-dog">Cute Dog</p>
-                                <button>$ 24.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/little-friend.png" alt="" draggable="false">
-                                <p data-i18n="little-friend">Little Friend</p>
-                                <button>$ 27.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/plush-toy.png" alt="" draggable="false">
-                                <p data-i18n="plush-toy">Mega Plush Toy</p>
-                                <button>$ 38.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/teddy.png" alt="" draggable="false">
-                                <p data-i18n="teddy-bear">Teddy Bear</p>
-                                <button>$ 30.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/little-friend.png" alt="" draggable="false">
-                                <p data-i18n="little-friend">Little Friend</p>
-                                <button>$ 27.00 USD</button>
-                            </div>
-                            <div class="card" class="toy-card">
-                                <img src="./../images/cute-dog.png" alt="" draggable="false">
-                                <p data-i18n="cute-dog">Cute Dog</p>
-                                <button>$ 24.00 USD</button>
-                            </div>                        
+                    <div class="toys" style="row-gap: 70px;">
+                        <div class="toy-card">
+                            <img src="./../images/teddy.png" alt="">
+                            <p data-i18n="teddy-bear">Teddy Bear</p>
+                            <button>$ 30.00 USD</button>
                         </div>
-                    </div>
-                </div>
-                <div class="arrows">
-                    <button id="left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M19.9375 39.2083C19.5417 39.2083 19.1458 39.0625 18.8333 38.75L6.1875 26.1042C5.58333 25.5 5.58333 24.5 6.1875 23.8958L18.8333 11.25C19.4375 10.6458 20.4375 10.6458 21.0417 11.25C21.6458 11.8542 21.6458 12.8542 21.0417 13.4583L9.5 25L21.0417 36.5417C21.6458 37.1458 21.6458 38.1458 21.0417 38.75C20.75 39.0625 20.3333 39.2083 19.9375 39.2083Z" fill="var(--color-font)"/>
-                            <path d="M42.7083 26.5625H7.64584C6.79167 26.5625 6.08334 25.8542 6.08334 25C6.08334 24.1458 6.79167 23.4375 7.64584 23.4375H42.7083C43.5625 23.4375 44.2708 24.1458 44.2708 25C44.2708 25.8542 43.5625 26.5625 42.7083 26.5625Z" fill="var(--color-font)"/>
-                        </svg>
-                    </button>
-                    <button id="right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M30.0625 39.2083C29.6667 39.2083 29.2709 39.0625 28.9584 38.75C28.3542 38.1458 28.3542 37.1458 28.9584 36.5417L40.5 25L28.9584 13.4583C28.3542 12.8542 28.3542 11.8542 28.9584 11.25C29.5625 10.6458 30.5625 10.6458 31.1667 11.25L43.8125 23.8958C44.4167 24.5 44.4167 25.5 43.8125 26.1042L31.1667 38.75C30.8542 39.0625 30.4584 39.2083 30.0625 39.2083Z" fill="var(--color-font)"/>
-                            <path d="M42.3541 26.5625H7.29163C6.43746 26.5625 5.72913 25.8542 5.72913 25C5.72913 24.1458 6.43746 23.4375 7.29163 23.4375H42.3541C43.2083 23.4375 43.9166 24.1458 43.9166 25C43.9166 25.8542 43.2083 26.5625 42.3541 26.5625Z" fill="var(--color-font)"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="third-and-forth-section">
-            <div class="container">
-                <div class="main-content">
-                    <div class="higher-part">
-                        <div class="heading">
-                            <h2 id="wooden-toys-4th">Wooden Toys</h2>
-                            <div class="see-all-toys">
-                                <a href="./../pages/wooden-catalog.html">
-                                    <p data-i18n="see-all">See All Toys</p>
-                                </a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                    <path d="M9.0187 11.7625C8.89995 11.7625 8.7812 11.7187 8.68745 11.625C8.5062 11.4437 8.5062 11.1437 8.68745 10.9625L12.15 7.49995L8.68745 4.03745C8.5062 3.8562 8.5062 3.5562 8.68745 3.37495C8.8687 3.1937 9.1687 3.1937 9.34995 3.37495L13.1437 7.1687C13.325 7.34995 13.325 7.64995 13.1437 7.8312L9.34995 11.625C9.2562 11.7187 9.13745 11.7625 9.0187 11.7625Z" fill="var(--color-font)"/>
-                                    <path d="M12.7062 7.96875H2.1875C1.93125 7.96875 1.71875 7.75625 1.71875 7.5C1.71875 7.24375 1.93125 7.03125 2.1875 7.03125H12.7062C12.9625 7.03125 13.175 7.24375 13.175 7.5C13.175 7.75625 12.9625 7.96875 12.7062 7.96875Z" fill="var(--color-font)"/>
-                                </svg>
-                            </div>
+                        <div class="toy-card">
+                            <img src="./../images/plush-toy.png" alt="">
+                            <p data-i18n="plush-toy">Mega Plush Toy</p>
+                            <button>$ 38.00 USD</button>
                         </div>
-                        <hr>
-                    </div>
-                    <div class="wrapper">
-                        <div class="carousel">
-                            <div class="card">
-                                <img src="./../images/wooden-toy.png" alt="" draggable="false">
-                                <p data-i18n="happy-flower">Happy Flower</p>
-                                <button>$ 38.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/lift-machine.png" alt="" draggable="false">
-                                <p data-i18n="lift-machine">Lift Machine</p>
-                                <button>$ 24.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/camera.png" alt="" draggable="false">
-                                <p data-i18n="wooden-camera">Wooden Camera</p>
-                                <button>$ 32.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/rabbit.png" alt="" draggable="false">
-                                <p data-i18n="little-rabit">Little Rabbit</p>
-                                <button>$ 16.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/camera.png" alt="" draggable="false">
-                                <p data-i18n="wooden-camera">Wooden Camera</p>
-                                <button>$ 32.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/wooden-toy.png" alt="" draggable="false">
-                                <p data-i18n="happy-flower">Happy Flower</p>
-                                <button>$ 38.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/lift-machine.png" alt="" draggable="false">
-                                <p data-i18n="lift-machine">Lift Machine</p>
-                                <button>$ 24.00 USD</button>
-                            </div>
-                            <div class="card">
-                                <img src="./../images/camera.png" alt="" draggable="false">
-                                <p data-i18n="wooden-camera">Wooden Camera</p>
-                                <button>$ 32.00 USD</button>
-                            </div>
+                        <div class="toy-card">
+                            <img src="./../images/cute-dog.png" alt="">
+                            <p data-i18n="cute-dog">Cute Dog</p>
+                            <button>$ 24.00 USD</button>
                         </div>
+                        <div class="toy-card">
+                            <img src="./../images/little-friend.png" alt="">
+                            <p data-i18n="little-friend">Little Friend</p>
+                            <button>$ 27.00 USD</button>
+                        </div>
+                        <div class="toy-card">
+                            <img src="./../images/little-friend.png" alt="">
+                            <p data-i18n="little-friend">Little Friend</p>
+                            <button>$ 27.00 USD</button>
+                        </div>
+                        <div class="toy-card">
+                            <img src="./../images/teddy.png" alt="">
+                            <p data-i18n="teddy-bear">Teddy Bear</p>
+                            <button>$ 30.00 USD</button>
+                        </div>
+                        <div class="toy-card">
+                            <img src="./../images/plush-toy.png" alt="">
+                            <p data-i18n="plush-toy">Mega Plush Toy</p>
+                            <button>$ 38.00 USD</button>
+                        </div>
+                        <div class="toy-card">
+                            <img src="./../images/cute-dog.png" alt="">
+                            <p data-i18n="cute-dog">Cute Dog</p>
+                            <button>$ 24.00 USD</button>
+                        </div>
+                        
                     </div>
+                    <button class="open-catalog"><a href="/pages/wooden-catalog.html" data-i18n="wooden-cat"></a></button>
                 </div>
-                <div class="arrows">
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M19.9375 39.2083C19.5417 39.2083 19.1458 39.0625 18.8333 38.75L6.1875 26.1042C5.58333 25.5 5.58333 24.5 6.1875 23.8958L18.8333 11.25C19.4375 10.6458 20.4375 10.6458 21.0417 11.25C21.6458 11.8542 21.6458 12.8542 21.0417 13.4583L9.5 25L21.0417 36.5417C21.6458 37.1458 21.6458 38.1458 21.0417 38.75C20.75 39.0625 20.3333 39.2083 19.9375 39.2083Z" fill="var(--color-font)"/>
-                            <path d="M42.7083 26.5625H7.64584C6.79167 26.5625 6.08334 25.8542 6.08334 25C6.08334 24.1458 6.79167 23.4375 7.64584 23.4375H42.7083C43.5625 23.4375 44.2708 24.1458 44.2708 25C44.2708 25.8542 43.5625 26.5625 42.7083 26.5625Z" fill="var(--color-font)"/>
-                        </svg>
-                    </button>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-                            <path d="M30.0625 39.2083C29.6667 39.2083 29.2709 39.0625 28.9584 38.75C28.3542 38.1458 28.3542 37.1458 28.9584 36.5417L40.5 25L28.9584 13.4583C28.3542 12.8542 28.3542 11.8542 28.9584 11.25C29.5625 10.6458 30.5625 10.6458 31.1667 11.25L43.8125 23.8958C44.4167 24.5 44.4167 25.5 43.8125 26.1042L31.1667 38.75C30.8542 39.0625 30.4584 39.2083 30.0625 39.2083Z" fill="var(--color-font)"/>
-                            <path d="M42.3541 26.5625H7.29163C6.43746 26.5625 5.72913 25.8542 5.72913 25C5.72913 24.1458 6.43746 23.4375 7.29163 23.4375H42.3541C43.2083 23.4375 43.9166 24.1458 43.9166 25C43.9166 25.8542 43.2083 26.5625 42.3541 26.5625Z" fill="var(--color-font)"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section class="fifth-section">
-            <div class="container">
-                <h5 class="about-the-shop" data-i18n="about-the-shop">About The Shop</h5>
-                <h2 class="watch-our-story" data-i18n="watch-our-story">Watch Our Story</h2>
-                <p class="description" data-i18n="description">There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad placement, demographic, even the consumer’s mood.</p>
-                <button class="play-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <mask id="mask0_1_196" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="6" y="3" width="15" height="18">
-                          <path d="M20.4615 11.0469L7.75137 3.16796C7.40255 2.95541 6.94472 2.94075 6.58863 3.14597C6.22528 3.35119 6 3.73964 6 4.15741V19.842C6 20.2597 6.22528 20.6482 6.58137 20.8534C6.75578 20.9487 6.94472 21 7.14093 21C7.35168 21 7.55516 20.9414 7.73684 20.8314L20.447 13.0185C20.7885 12.8132 20.9993 12.4321 20.9993 12.0363C21.0138 11.6332 20.8031 11.2521 20.4615 11.0469Z" fill="var(--color-element)"/>
-                        </mask>
-                        <g mask="url(#mask0_1_196)">
-                          <path d="M20.4615 11.0469L7.75137 3.16796C7.40255 2.95541 6.94472 2.94075 6.58863 3.14597C6.22528 3.35119 6 3.73964 6 4.15741V19.842C6 20.2597 6.22528 20.6482 6.58137 20.8534C6.75578 20.9487 6.94472 21 7.14093 21C7.35168 21 7.55516 20.9414 7.73684 20.8314L20.447 13.0185C20.7885 12.8132 20.9993 12.4321 20.9993 12.0363C21.0138 11.6332 20.8031 11.2521 20.4615 11.0469Z" fill="var(--color-element)"/>
-                        </g>
-                    </svg>
-                </button>
-            </div>
-        </section>
-
-        <section class="sixth-section">
-            <div class="container">
-                <div class="heading-and-desc">
-                    <h3 class="made-for-webflow" data-i18n="made-for-webflow">Made for Webflow</h3>
-                    <h2 class="simple-ecommerce" data-i18n="simple-ecommerce">Simple & Colorful Ecommerce Template for Your Business</h2>
-                </div>
-                <div class="main-part">
-                    <div class="left-col">
-                        <h4 class="available-for-free" data-i18n="available-for-free">Available for FREE!</h4>
-                        <hr>
-                        <p class="paragraph" data-i18n="paragraph">
-                            A successful marketing plan relies heavily on the pulling-power of advertising copy. 
-                            Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince 
-                            consumers to take action. There is no magic formula to write perfect ad copy
-                        </p>
-                        <button class="get-it-now-btn">
-                            <label id="get-it-now" data-i18n="get-it-now">GET IT NOW!</label>
-                        </button>
-                    </div>
-                    <img src="../images/boys-img.png" alt="Boys image">
-                </div>
-            </div>
-        </section>
-
-        <section class="seventh-section">
-            <div class="container">
-                <div class="icon-and-subscribe">
-                    <button class="telegram-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
-                            <path d="M25.9599 3.02333C25.8104 2.90602 25.6061 2.88899 25.4377 2.97981L2.18768 15.5736C2.01928 15.6644 1.92089 15.8479 1.93981 16.039C1.95684 16.2301 2.0855 16.3928 2.26715 16.4515L8.87622 18.6085L8.23669 25.1513C8.21588 25.3595 8.33129 25.5562 8.52239 25.6376C8.58294 25.666 8.64917 25.6792 8.7135 25.6792C8.84783 25.6792 8.98028 25.6225 9.07299 25.5165L13.2413 20.8071L19.5173 26.9942C19.6082 27.0831 19.7292 27.1323 19.8541 27.1323C19.8976 27.1323 19.9412 27.1248 19.9847 27.1134C20.1493 27.068 20.278 26.9356 20.3196 26.7691L26.1321 3.51906C26.1775 3.33363 26.1113 3.13875 25.9599 3.02333ZM9.84875 18.5195L19.2997 10.8774L12.8591 19.7948L9.3341 23.7739L9.84875 18.5195Z" fill="var(--color-element)"/>
-                        </svg>
-                    </button>
-                    <p class="subscribe" data-i18n="subscribe">Subscribe to our news letter& get 10% discount!</p>
-                </div>
-                <div class="input-block">
-                    <input type="text">
-                    <button class="green-btn"></button>
-                </div>
-            </div>
-        </section>
-
-        <section class="eighth-section">
-            <div class="container">
-                <div class="first-row">
-                    <h5>@ElasticThemes</h5>
-                    <h2 class="we-on-inst" data-i18n="we-on-inst">We're on Instagram!</h2>
-                </div>
-                <div class="photos">
-                    <img src="../images/photo1.png" alt="">
-                    <img class="phone-hide" src="../images/photo2.png" alt="">
-                    <img class="phone-hide" src="../images/photo3.png" alt="">
-                    <img class="tablet-hide" src="../images/photo4.png" alt="">
-                    <img class="tablet-hide" src="../images/photo5.png" alt="">
-                    <img class="tablet-hide" src="../images/photo6.png" alt="">
-                </div>
-                <button class="see-more-photos-btn">
-                    <label data-i18n="see-more-photos">See More Photos</label>
-                </button>
             </div>
         </section>
     </main>
@@ -461,7 +248,6 @@
     </footer>
 
     <script src="./../js/burger-menu.js"></script>
-    <script src="./../js/slider.js"></script>
     <script src="./../js/open-maps.js"></script>
     <script src="./../js/lang-switcher.js"></script>
     <script src="./../js/theme-switcher.js"></script>

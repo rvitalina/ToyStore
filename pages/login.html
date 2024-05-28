@@ -6,11 +6,13 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="./../css/index-styles.css">
     <link rel="stylesheet" href="./../css/sign-up.css">
+    <link rel="stylesheet" href="./../css/media-queries.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Page</title>
+    <title>Sign-up</title>
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="header-contacts">
             <div class="left">
@@ -51,27 +53,44 @@
             </div>
         </div>
         <div class="header-main-part">
-            <a href="./../pages/index.html">
-                <h2>ToyStore</h2>
-            </a>            
-            <nav>
+            <button class="burger-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 20 15" fill="none">
+                    <line y1="0.5" x2="25" y2="0.5" stroke="var(--color-font)"/>
+                    <line y1="14.5" x2="25" y2="14.5" stroke="var(--color-font)"/>
+                    <line y1="7.5" x2="25" y2="7.5" stroke="var(--color-font)"/>
+                </svg>
+            </button>
+            <h2>ToyStore</h2>
+            <nav id="menu">
                 <ul>
-                    <li data-i18n="catalog"><a href="#third-section">Catalog</a></li>
-                    <li data-i18n="delivery">Delivery</li>
-                    <li data-i18n="about"><a href="">About</a></li>
-                    <li data-i18n="contacts"><a href="#footer">Contacts</a></li>
+                    <li><a data-i18n="home" href="./../pages/index.html">Home</a></li>
+                    <li><a href="/pages/index.html#second-section" data-i18n="catalog">Catalog</a></li>
+                    <li><a data-i18n="about" href="./../pages/about.html">About</a></li>
                 </ul>
-
-                <div class="icons-container">
-                    <svg id="theme-switcher" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M19.9999 8.68997V3.99997H15.3099L11.9999 0.689972L8.68994 3.99997H3.99994V8.68997L0.689941 12L3.99994 15.31V20H8.68994L11.9999 23.31L15.3099 20H19.9999V15.31L23.3099 12L19.9999 8.68997ZM11.9999 18C11.1099 18 10.2599 17.8 9.49994 17.45C11.5599 16.5 12.9999 14.42 12.9999 12C12.9999 9.57997 11.5599 7.49997 9.49994 6.54997C10.2599 6.19997 11.1099 5.99997 11.9999 5.99997C15.3099 5.99997 17.9999 8.68997 17.9999 12C17.9999 15.31 15.3099 18 11.9999 18Z" fill="var(--color-font)"/>
-                    </svg>
-                    <select name="select-lang" id="lang-switcher" onchange="changeLanguage()">
-                        <option value="en">EN</option>
-                        <option value="ru">RU</option>
-                    </select>
-                </div>
+                <svg class="close-menu-btn" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 38 38" fill="none">
+                        <g clip-path="url(#clip0_389_938)">
+                          <path d="M38 0H0V38H38V0Z" fill="white" fill-opacity="0.01"/>
+                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_389_938">
+                            <rect width="38" height="38" fill="white"/>
+                          </clipPath>
+                        </defs>
+                </svg>
+                
             </nav>
+            <div class="icons-container">
+                <svg id="theme-switcher" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M19.9999 8.68997V3.99997H15.3099L11.9999 0.689972L8.68994 3.99997H3.99994V8.68997L0.689941 12L3.99994 15.31V20H8.68994L11.9999 23.31L15.3099 20H19.9999V15.31L23.3099 12L19.9999 8.68997ZM11.9999 18C11.1099 18 10.2599 17.8 9.49994 17.45C11.5599 16.5 12.9999 14.42 12.9999 12C12.9999 9.57997 11.5599 7.49997 9.49994 6.54997C10.2599 6.19997 11.1099 5.99997 11.9999 5.99997C15.3099 5.99997 17.9999 8.68997 17.9999 12C17.9999 15.31 15.3099 18 11.9999 18Z" fill="var(--color-font)"/>
+                </svg>
+                <select name="select-lang" id="lang-switcher" onchange="changeLanguage()">
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
         </div>
     </header>
 
@@ -96,6 +115,7 @@
         </section>
     </main>
 
+    <script src="./../js/burger-menu.js"></script>
     <script src="./../js/select-date.js"></script>
     <script src="./../js/validate-form.js"></script>
     <script src="./../js/generate-nickname.js"></script>
