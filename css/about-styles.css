@@ -1,0 +1,158 @@
+main {
+  background: var(--color-bg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .container {
+  margin: auto;
+  background: var(--color-element);
+  color: var(--color-font);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  max-width: 1162px;
+  padding: 50px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+}
+main .container .heading-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 491px;
+}
+main .container .heading-description h2 {
+  margin: 0;
+  font-family: "Varela Round";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: normal;
+}
+main .container .heading-description p {
+  margin: 0;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+main .container .photo-text-container {
+  max-width: 896px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: start;
+}
+main .container .photo-text-container .text {
+  display: flex;
+  width: 356px;
+  height: min-content;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 15px;
+}
+main .container .photo-text-container .text h3 {
+  margin: 0;
+  font-family: "Varela Round";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+}
+main .container .photo-text-container .text p {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+main .container button {
+  border: none;
+  border-radius: 24px;
+  background: var(--color-green);
+  width: 278px;
+  height: 48px;
+  transition: transform 0.4s ease;
+}
+main .container button a {
+  color: var(--color-element);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+main .container button:hover {
+  cursor: pointer;
+  background: #a7ca27;
+  transform: scale(1.1);
+}
+main .container button:active {
+  background: #9bbc24;
+}
+
+@media (max-width: 769px) {
+  main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .container {
+    width: 668px;
+    align-items: center;
+    gap: 40px;
+  }
+  main .container .photo-text-container {
+    gap: 45px;
+    flex-direction: column-reverse;
+  }
+  main .container .photo-text-container .text {
+    align-items: center;
+  }
+  main .container .photo-text-container .text p {
+    text-align: center;
+  }
+}
+@media (max-width: 321px) {
+  main {
+    height: 2401px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  main .container {
+    width: 290px;
+  }
+  main .container .heading-description {
+    width: 258px;
+  }
+  main .container .heading-description h2 {
+    text-align: center;
+  }
+  main .container .photo-text-container {
+    width: 280px;
+    gap: 45px;
+    flex-direction: column-reverse;
+  }
+  main .container .photo-text-container .text {
+    width: 280px;
+    align-items: center;
+  }
+  main .container .photo-text-container .text h3 {
+    text-align: center;
+  }
+  main .container .photo-text-container .text p {
+    text-align: center;
+  }
+  main .container .photo-text-container img {
+    width: 280px;
+    height: auto;
+  }
+  main .container button {
+    width: 215px;
+  }
+}
+
+/*# sourceMappingURL=about-styles.css.map */

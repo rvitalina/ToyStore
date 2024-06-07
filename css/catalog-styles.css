@@ -1,0 +1,35 @@
+main {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: var(--color-bg);
+    height: auto;
+}
+
+main .third-and-forth-section {
+    padding-top: 0;
+}
+
+
+main .third-and-forth-section .container .main-content .open-catalog {
+    width: 278px;
+    height: 48px;
+    border-radius: 24px;
+    background: var(--color-green);
+    border: none;
+}
+main .third-and-forth-section .container .main-content .open-catalog a {
+    color: var(--color-element);
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+main .third-and-forth-section .container .main-content .toys {
+    row-gap: 40px;
+}
+
+@media (max-width: 321px) {
+    main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
