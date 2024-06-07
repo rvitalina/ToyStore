@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./../css/media-index.css">
 
     <link rel="icon" href="./../images/favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="favic.webmanifest">
+    <!-- <link rel="manifest" href="favic.webmanifest"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up Page</title>
+    <title>Sign up</title>
 </head>
 <body>
     <div class="overlay"></div>
@@ -72,14 +72,14 @@
                 </ul>
                 <svg class="close-menu-btn" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 38 38" fill="none">
                         <g clip-path="url(#clip0_389_938)">
-                          <path d="M38 0H0V38H38V0Z" fill="white" fill-opacity="0.01"/>
-                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
-                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M38 0H0V38H38V0Z" fill="var(--color-font)" fill-opacity="0.01"/>
+                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="var(--color-font)" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="var(--color-font)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="var(--color-font)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         <defs>
                           <clipPath id="clip0_389_938">
-                            <rect width="38" height="38" fill="white"/>
+                            <rect width="38" height="38" fill="var(--color-font)"/>
                           </clipPath>
                         </defs>
                 </svg>
@@ -110,143 +110,86 @@
             <section class="sign-up-container">
                 <h2 id="create-account" data-i18n="create-account">Create an account</h2>
                 
-                <form action="" method="POST" id="signup-form">
+                <form id="signup-form" class="signup-form">
                     <label for="last-name" data-i18n="last-name">Last name*:</label>
-                    <input type="text" id="last-name" name="last_name">
-                    <span class="error-message" id="last-name-error"></span>
+                    <input type="text" class="inputLastName" name="last_name">
+                    <span class="error-l-name"></span><br>
 
                     <label for="first-name" data-i18n="first-name">First name*:</label>
-                    <input type="text" id="first-name" name="first_name">
-                    <span class="error-message" id="first-name-error"></span>
+                    <input type="text" class="inputFirstName" name="first_name">
+                    <span class="error-f-name"></span><br>
                 
                     <label for="patronymic" data-i18n="patronymic">Patronymic:</label>
-                    <input type="text" id="patronymic" name="patronymic">
-                    <span class="error-message" id="patronymic-error"></span>
+                    <input type="text" class="inputPatronymic" name="patronymic">
+                    <span class="error-patr"></span><br>
                 
                     <label for="email" data-i18n="email">Email*:</label>
-                    <input type="email" id="email" name="email">
-                    <span class="error-message" id="email-error"></span>
+                    <input type="email" class="inputEmail" name="email">
+                    <span class="error-email"></span><br>
                 
                     <label for="nickname" data-i18n="nickname">Nickname*:</label>
                     <div class="generate-box"> 
-                        <input type="text" id="nickname" name="nickname" minlength="8">
-                        <button id="gen-nickname" class="generate-btn" data-i18n="generate">Generate</button>
+                        <input type="text" class="inputNickname" name="nickname">
+                        <button id="gen-nickname" class="generate-nickname" data-i18n="generate">Generate</button>
                     </div>
-                    <div id="message" class="message"></div>
-                    <!-- <span class="error-message" id="nickname-error"></span> -->
+                    <span class="error-nickname"></span><br>
                 
-                    <label for="dob-month" data-i18n="dob">Date of birth*:</label>
-
-                    <div class="dob-container">
-                        <select id="dob-month" name="dob_month">
-                            <option value="" disabled selected data-i18n="month">Select month</option>
-                        </select>
-                            
-                        <select id="dob-date" name="dob_date">
-                            <option value="" disabled selected data-i18n="day">Select date</option>
-                        </select>
-                        
-                        <select id="dob-year" name="dob_year">
-                            <option value="" disabled selected data-i18n="year">Select year</option>
-                        </select>
-                    </div>
-                    <span class="error-message" id="dob-error"></span>
+                    <label for="dob" data-i18n="dob">Date of birth*:</label>
+                    <input type="text" class="inputBirthdate" name="dob">
+                    <span class="error-date"></span><br>
 
                     <label for="phone" data-i18n="phone-signup">Phone*:</label>
-                    <input type="tel" id="phone" name="phone">
-                    <span class="error-message" id="phone-error"></span>
+                    <input type="tel" class="inputNumber" name="phone">
+                    <span class="error-phone"></span><br>
 
                     <label for="password" data-i18n="password">Password*:</label>
                     <div class="generate-box"> 
-                        <input type="password" id="password" name="password">
-                        <button id="gen-password" class="generate-btn" data-i18n="generate">Generate</button>
+                        <input type="password" class="inputPassword" name="password">
+                        <button id="gen-password" class="generate-password" data-i18n="generate">Generate</button>
                     </div>
-                    <span class="error-message" id="password-error"></span>
+                    <span class="error-password"></span><br>
 
                     <label for="confirm-password" data-i18n="confirm-password">Repeat Password*:</label>
-                    <input type="confirm-password" id="confirm-password" name="confirm_password">
-                    <span class="error-message" id="confirm-password-error"></span>   
+                    <input type="confirm-password" class="inputConfirmPassword" name="confirm_password">
+                    <span class="error-confirm-password"></span>   
 
                     <div class="terms-of-use">
-                        <input type="checkbox" id="terms-of-use" name="terms-of-use">
+                        <input type="checkbox" class="terms-of-use" name="terms-of-use">
                         <p data-i18n="terms">By creating an account, I agree to the Terms of use.</p>
                     </div>
-                </form>                          
-                <!-- <input type="submit" value="Sign up" id="submit-btn" style="display: none;">   -->
-                <button class="bottom-btn" data-i18n="sign-up">Sign-up</button>
-
+                </form>
+                <button type="submit" class="sign-up-submit" data-i18n="sign-up" style="display: none;"></button>
             </section>
         </section>
 
-        <div id="modal-container">
+        <div class="modal-container">
             <div id="modal-content">
                 <div class="top-row">
                     <h3 data-i18n="terms-h3">Terms of Use</h3>
-                    <svg onclick="closeModal()" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                         <g clip-path="url(#clip0_389_938)">
-                          <path d="M38 0H0V38H38V0Z" fill="white" fill-opacity="0.01"/>
-                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
-                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M38 0H0V38H38V0Z" fill="var(--color-font)" fill-opacity="0.01"/>
+                          <path d="M19.0001 34.8334C27.7446 34.8334 34.8334 27.7446 34.8334 19.0001C34.8334 10.2556 27.7446 3.16675 19.0001 3.16675C10.2556 3.16675 3.16675 10.2556 3.16675 19.0001C3.16675 27.7446 10.2556 34.8334 19.0001 34.8334Z" stroke="var(--color-font)" stroke-width="2" stroke-linejoin="round"/>
+                          <path d="M23.4784 14.5217L14.5217 23.4784" stroke="var(--color-font)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.5217 14.5217L23.4784 23.4784" stroke="var(--color-font)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         <defs>
                           <clipPath id="clip0_389_938">
-                            <rect width="38" height="38" fill="white"/>
+                            <rect width="38" height="38" fill="var(--color-font)"/>
                           </clipPath>
                         </defs>
                     </svg>
                 </div>
                 <div class="scroll-container">
-                    <p>
-                        1. Acceptance of Terms
-                        By accessing and using the registration page of our toy store, you agree to comply with these Terms of Use. If you do not agree with any part of these terms, please refrain from using the registration page.
-                        <br>
-                        2. Eligibility
-                        To use the registration page, you must be of legal age according to the laws of your jurisdiction or have obtained consent from a parent or guardian. By registering, you represent that you meet the eligibility requirements.
-                        <br>
-                        3. Registration Information
-                        You are responsible for providing accurate and up-to-date information during the registration process. This includes your name, email address, and any other required details. You agree to keep this information current and promptly update any changes.
-                        <br>
-                        4. Account Security
-                        You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You must not share your account information with any third party. Any activity that occurs under your account is your responsibility.
-                        <br>
-                        5. User Conduct
-                        When using the registration page, you agree not to:
-                           a. Provide false, misleading, or inaccurate information.
-                           b. Engage in any unlawful, fraudulent, or unauthorized activities.
-                           c. Violate any applicable laws or regulations.
-                           d. Interfere with or disrupt the functionality of the registration page.
-                           e. Attempt to gain unauthorized access to the accounts of others.
-                           f. Use the registration page for any commercial or promotional purposes without our prior written consent.
-                        <br>
-                        6. Intellectual Property
-                        All content provided on the registration page, including text, graphics, logos, images, and software, is the property of the toy store or its licensors and is protected by intellectual property laws. You may not use, reproduce, distribute, or modify any content without obtaining explicit permission.
-                        <br>
-                        7. Privacy
-                        We respect your privacy and handle your personal information in accordance with our Privacy Policy. By using the registration page, you consent to the collection, use, and disclosure of your information as described in our Privacy Policy.
-                        <br>
-                        8. Termination
-                        We reserve the right to suspend or terminate your access to the registration page at any time without prior notice if we believe you have violated these Terms of Use or engaged in any prohibited activities.
-                        <br>
-                        9. Modifications
-                        We may update or modify these Terms of Use from time to time. Any changes will be effective immediately upon posting the revised terms on the registration page. Your continued use of the registration page constitutes your acceptance of the modified terms.
-                        <br>
-                        10. Governing Law
-                        These Terms of Use shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any legal proceedings arising out of or in connection with these terms shall be exclusively brought in the courts of [Jurisdiction].
-                        <br>
-                        Please carefully read and understand these Terms of Use before proceeding with the registration. If you have any questions or concerns, please contact us for clarification.
-                    </p>
+                    <p data-i18n="terms-content"></p>
                 </div>                
             </div>
         </div>
     </main>
 
     <script src="./../js/burger-menu.js"></script>
-    <script src="./../js/select-date.js"></script>
-    <script src="./../js/validate-form.js"></script>
-    <script src="./../js/generate-nickname.js"></script>
-    <script src="./../js/open-modal.js"></script>
     <script src="./../js/lang-switcher.js"></script>
     <script src="./../js/theme-switcher.js"></script>
+    <script type="module" src="./../js/index.js"></script>
 </body>
 </html>

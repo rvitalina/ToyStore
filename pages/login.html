@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./../css/media-index.css">
 
     <link rel="icon" href="./../images/favicon.svg" type="image/svg+xml">
-    <link rel="manifest" href="favic.webmanifest">
+    <!-- <link rel="manifest" href="favic.webmanifest"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up</title>
+    <title>Log in</title>
 </head>
 <body>
     <div class="overlay"></div>
@@ -101,29 +101,28 @@
         <section class="create-account" style="padding-top: 92px;">
             <section class="sign-up-container">
                 <h2 id="create-account" data-i18n="log-in">Log in</h2>
-                
-                <form action="" method="POST" id="signup-form">
+
+                <form class="form-auth">
                     <label for="email" data-i18n="email">Email*:</label>
-                    <input type="email" id="email" name="email">
-                    <span class="error-message" id="email-error"></span>
+                    <input class="inputEmailAuth" type="email" name="email">
+                    <span class="error-email-auth"></span>
+                    <br>
 
                     <label for="password" data-i18n="password">Password*:</label>
                     <div class="generate-box"> 
-                        <input type="password" id="password" name="password" style="width: 95.3%;">
+                        <input class="inputPasswordAuth" type="password" name="password" style="width: 95.3%;">
                     </div>
-                    <span class="error-message" id="password-error"></span>
+                    <span class="error-password-auth"></span>
+                    <br>
                 </form>          
-                <button class="bottom-btn" data-i18n="log-in">Log in</button>
+                <button type="submit" class="login-btn" data-i18n="log-in">Log in</button>
             </section>
         </section>
     </main>
 
     <script src="./../js/burger-menu.js"></script>
-    <script src="./../js/select-date.js"></script>
-    <script src="./../js/validate-form.js"></script>
-    <script src="./../js/generate-nickname.js"></script>
-    <script src="./../js/open-modal.js"></script>
     <script src="./../js/lang-switcher.js"></script>
     <script src="./../js/theme-switcher.js"></script>
+    <script type="module" src="./../js/index.js"></script>
 </body>
 </html>
